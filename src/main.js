@@ -14,12 +14,17 @@ import { BootstrapVue, BootstrapVueIcons, IconsPlugin } from 'bootstrap-vue'
 import { VueCsvImportPlugin } from 'vue-csv-import'
 import { store } from './store'
 import VueKonva from 'vue-konva'
+import dotenv from 'dotenv'
 
 Vue.use(VueKonva)
 
 Vue.use(VueCsvImportPlugin)
 
 Vue.config.productionTip = false
+
+dotenv.config()
+
+console.log('Backend=' + process.env.VUE_APP_BACKEND_GRAPHQL)
 
 const httpEndpoint = process.env.VUE_APP_BACKEND_GRAPHQL
 

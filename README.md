@@ -10,6 +10,12 @@ Requires the backend keystone application to be up and running https://github.co
 
 Requires a MongoDB database.
 
+Set environment variables to specify your club and team e.g.
+```
+VUE_APP_ORGANIZATION="My GAA Club"
+VUE_APP_TEAM="My Team"
+```
+
 ## Build Setup
 
 ``` bash
